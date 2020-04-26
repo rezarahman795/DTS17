@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+  }
+  
+  body {
+    font-family: "Segoe UI";
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /* Header dan sejenisnya */
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  
+  .header-left {
+    float: left;
+    padding: 15px 0 15px 5px;
+    margin-left: 0px;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  header h1 {
+    font-size: 24px;
+    color: #b3aeb5;
+  }
+  /* Akhir header dan sejenisnya */
+
+  /* Top Wrapper dan sejenisnya */
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    width: 1170px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+
+  
+  .garis {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  
+  .animasi-ketikan {
+    animation: ketikan 4s steps(20) 1s 1 normal both,
+        kedip 1s steps(20) normal;
+  }
+  
+  @keyframes ketikan {
+    from {
+        width: 0;
+    } to {
+        width: 15em;
+    }
+  }
+  
+  @keyframes kedip {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    } to {
+        border-right-color:  rgba(0, 0, 0, 0);
+    }
+    
+  }
+  /* Akhir top wrapper dan sejenisnya */
+  
+  /* Profil Tim dan sejenisnya */
+  .profil-wrapper {
+    padding-bottom: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .profil-tim {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profil-ind {
+    float: left;
+    flex: auto;
+    width: 25%;
+  }
+
+  .profil-item {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .profil-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .foto-ind {
+    position: relative;
+  }
+  
+  .foto-ind img {
+      border-radius: 50%;
+      width: 150px;
+  }
+
+  .foto-ind p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  .nama-ind {
+      height: 30px;
+  }
+  .fa{
+    margin-right:5px;
+  }
+  .facebook{
+    background-color:#3b5998;
+    opacity:0.8;
+    margin-right:10px;
+  }
+
+  .ket-ind {
+      margin-top: 5px;
+  }
+
+  .ket-ind p {
+      margin-bottom: 3px;
+      font-size: 15px;
+  }
+
+  .nama-ind h1 {
+      font-size: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color:black;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  #profilarea {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+
+  @-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }  
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  /* Akhir Profil Tim */
+
+  /* Footer dan sejenisnya */
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+
+  footer {
+    background-color: #2d3436;
+    height: 60px;
+  }
+
+  .footer-left {
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-left h3 {
+    color: #b3aeb5;
+  }
+
+  .footer-right li {
+    font-size: 15px;
+    float: right;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  .footer-left span {
+    color: #74b9ff;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #74b9ff;
+  }
+
+  .footer-right {
+    float: right;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  /* Akhir footer */
